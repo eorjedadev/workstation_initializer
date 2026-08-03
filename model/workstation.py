@@ -1,6 +1,6 @@
 # Se realiza la clase para el bria y escritorio remoto
 
-class BriaRemote:
+class WorkInitializer:
     def __init__(self, pyautogui):
         self.pyautogui = pyautogui
 
@@ -19,8 +19,10 @@ class BriaRemote:
         # Ejecutar Conectar
         self.pyautogui.moveTo(815, 550, 1)
         self.pyautogui.click()
+
+    def ejecutarEccloger(self):
         # Ejecutar Ingresar usuario
-        self.pyautogui.moveTo(600, 360, 30)
+        self.pyautogui.moveTo(600, 345, 30)
         self.pyautogui.click()
         self.pyautogui.write('47981033', interval=0.25)
         # Ejecutar Ingresar contraseña

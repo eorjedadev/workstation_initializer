@@ -1,8 +1,7 @@
 import time
 
-from model.navOpera import Opera
 from model.CiscoAnyConnect import CiscoAnyConnect
-from model.briaRemote import BriaRemote
+from model.workstation import WorkInitializer
 
 
 class WorkstationInitializer:
@@ -10,38 +9,32 @@ class WorkstationInitializer:
     def __init__(self, pyautogui):
         self.pyautogui = pyautogui
 
-        self.opera = Opera(pyautogui)
         self.cisco = CiscoAnyConnect(pyautogui)
-        self.bria_remote = BriaRemote(pyautogui)
+        self.work = WorkInitializer(pyautogui)
 
     def iniciar(self):
 
         print("======================================")
         print(" WORKSTATION INITIALIZER SECURITY")
         print("======================================")
+        print("Creador por: Eduardo Orjeda Figueroa")
+        print("version: 1.0.0".center(45))
 
         try:
-            #print("[1/5] Iniciando Navegador Opera...")
-            #self.opera.ejecutarOpera()
-            #time.sleep(2)
 
-            #print("[2/5] Registrando asistencia...")
-            # Aquí puedes agregar la lógica adicional
-            #time.sleep(2)
-
-            print("[1/3] Iniciando Cisco AnyConnect VPN...")
+            print("[1/4] Iniciando Cisco AnyConnect VPN...")
             self.cisco.ejecutarCisco()
             time.sleep(2)
 
-            print("[2/3] Iniciando Bria Enterprise...")
-            self.bria_remote.ejecutarBria()
+            print("[2/4] Iniciando Bria Enterprise...")
+            self.work.ejecutarBria()
             time.sleep(2)
 
-            print("[3/3] Conectando Escritorio Remoto...")
-            self.bria_remote.ejecutarEscritorioRemoto()
+            print("[3/4] Conectando Escritorio Remoto...")
+            self.work.ejecutarEscritorioRemoto()
 
-
-
+            print("[3/4] Iniciando ECC Loger...")
+            self.work.ejecutarEccloger()
 
             print("\n✔ Proceso completado correctamente.")
 
