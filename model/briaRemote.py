@@ -11,7 +11,7 @@ class BriaRemote:
 
     def ejecutarEscritorioRemoto(self):
         # Ejecutar Escritorio remoto
-        self.pyautogui.moveTo(336, 149, 1)
+        self.pyautogui.moveTo(336, 149, 3)
         self.pyautogui.click(clicks=2)
         # Ejecutar Portapapel
         self.pyautogui.moveTo(490, 402, 1)
@@ -20,7 +20,7 @@ class BriaRemote:
         self.pyautogui.moveTo(815, 550, 1)
         self.pyautogui.click()
         # Ejecutar Ingresar usuario
-        self.pyautogui.moveTo(600, 360, 20)
+        self.pyautogui.moveTo(600, 360, 30)
         self.pyautogui.click()
         self.pyautogui.write('47981033', interval=0.25)
         # Ejecutar Ingresar contraseña

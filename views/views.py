@@ -21,23 +21,23 @@ class WorkstationInitializer:
         print("======================================")
 
         try:
-            print("[1/5] Iniciando Navegador Opera...")
-            self.opera.ejecutarOpera()
-            time.sleep(2)
+            #print("[1/5] Iniciando Navegador Opera...")
+            #self.opera.ejecutarOpera()
+            #time.sleep(2)
 
-            print("[2/5] Registrando asistencia...")
+            #print("[2/5] Registrando asistencia...")
             # Aquí puedes agregar la lógica adicional
-            time.sleep(2)
+            #time.sleep(2)
 
-            print("[3/5] Iniciando Cisco AnyConnect VPN...")
+            print("[1/3] Iniciando Cisco AnyConnect VPN...")
             self.cisco.ejecutarCisco()
             time.sleep(2)
 
-            print("[4/5] Iniciando Bria Enterprise...")
+            print("[2/3] Iniciando Bria Enterprise...")
             self.bria_remote.ejecutarBria()
             time.sleep(2)
 
-            print("[5/5] Conectando Escritorio Remoto...")
+            print("[3/3] Conectando Escritorio Remoto...")
             self.bria_remote.ejecutarEscritorioRemoto()
 
 
