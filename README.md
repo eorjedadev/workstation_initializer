@@ -14,6 +14,7 @@ de forma automatica.
 - python 3.11
 - PyautoGUI
 
+
 # Para capturar las posiciones de la pantalla
 
 ```python
@@ -28,3 +29,10 @@ try:
 except KeyboardInterrupt:
     print('\n')
 ```
+
+# Coordenadas de cada aplicativo a capturar
+
+## CiscoAnyConnect
+## Bria
+## Escritorio Remoto
+## ECC LOGER

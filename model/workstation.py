@@ -26,7 +26,7 @@ class WorkInitializer:
         self.pyautogui.click()
         self.pyautogui.write('47981033', interval=0.25)
         # Ejecutar Ingresar contraseña
-        self.pyautogui.moveTo(900, 36, 5)
+        self.pyautogui.moveTo(585, 421, 5)
         self.pyautogui.click()
         self.pyautogui.write('*A0108#h1732Sab+', interval=0.25)
         self.pyautogui.press('enter')
@@ -35,5 +35,5 @@ class WorkInitializer:
         self.pyautogui.moveTo(221, 746, 3)
         self.pyautogui.click()
         # minimizar ventana de escritorio remoto
-        self.pyautogui.moveTo(885, 9, 2)
+        self.pyautogui.moveTo(881, 8, 2)
         self.pyautogui.click()
