@@ -18,7 +18,7 @@ class WorkstationInitializer:
         print(" WORKSTATION INITIALIZER SECURITY")
         print("======================================")
         print("Creador por: Eduardo Orjeda Figueroa")
-        print("version: 1.0.0".center(45))
+        print("version: 1.0.0")
 
         try:
 

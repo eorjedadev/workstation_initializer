@@ -29,8 +29,11 @@ class WorkInitializer:
         self.pyautogui.moveTo(585, 421, 5)
         self.pyautogui.click()
         self.pyautogui.write('*A0108#h1732Sab+', interval=0.25)
-        self.pyautogui.press('enter')
-        self.pyautogui.press('enter')
+
+        #Ingresar
+        self.pyautogui.moveTo(673, 502, 10)
+        self.pyautogui.click()
+        self.pyautogui.press('press')
         # Iniciar sesión workdesktop
         self.pyautogui.moveTo(221, 746, 3)
         self.pyautogui.click()
